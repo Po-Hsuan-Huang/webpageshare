@@ -127,7 +127,8 @@ const achievementSection = {
 
 const skillsSection = {
   title: "Professional Summary",
-  subTitle: "Compuer Vision | Brain Computer Interface | Medical Machine Lenaring ",
+  subTitle:
+    "Compuer Vision | Brain Computer Interface | Medical Machine Lenaring ",
   skills: [
     emoji(
       "⚡ Armed with a PhD in Computer Vision and Machine Learning. \
@@ -137,8 +138,6 @@ const skillsSection = {
        making me a valued partner in any tech-driven initiative. Whethein the tech space or seeking insights on \
        leveraging AI for organizational growth, let's explore how we can drive the future of work together."
     )
-
-    
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -151,35 +150,41 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Pytorch",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fab fa-css3-alt",
+      path: "https://yumo-test.s3.amazonaws.com/PyTorch_logo_icon.svg"
     },
     {
       skillName: "Tensorflow",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fab fa-sass",
+      path: "https://yumo-test.s3.amazonaws.com/fi-snsuxl-tensorflow.svg"
     },
     {
       skillName: "OpenCV",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
+      path: "https://yumo-test.s3.amazonaws.com/opencv.svg"
     },
     {
       skillName: "Scikit-learn",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
+      path: "https://yumo-test.s3.amazonaws.com/scikit-learn.svg"
     },
     {
       skillName: "SQL",
-      fontAwesomeClassname: "fab fa-node"
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "Hugging Face",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fab fa-swift",
+      path: "https://yumo-test.s3.amazonaws.com/hugging-face-icon.svg"
     },
     {
       skillName: "Machine Learning",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fab fa-network",
+      path: "https://yumo-test.s3.amazonaws.com/machine-learning-03-svgrepo-com.svg"
     },
     {
       skillName: "Neuroscience",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
       skillName: "aws",
@@ -191,7 +196,8 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Physics",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
+      path: "https://yumo-test.s3.amazonaws.com/physics-icon.svg"
     },
     {
       skillName: "docker",
@@ -209,17 +215,19 @@ const educationInfo = {
     {
       schoolName: "University of Southern California",
       logo: require("./assets/images/USC.png"),
-      subHeader: "Ph.D of Computational Neuroscence and artificial intelligence",
+      subHeader:
+        "Ph.D of Computational Neuroscence and artificial intelligence",
       duration: "July 2017 - December 2024",
       desc: "RANSAC inspired semisupervised learning with application to early-stage detection of rare neurological conditions",
       descBullets: [
         "Innovated a robust semi-supervised algorithm, notable for its resilience to incorrect annotations and outliers, and capable of delivering optimal results in real-world data \n",
         "Designed and Implemented a machine learning pipeline with visual-based features and computer vision pipeline. Achieved optimal results with limited low-quality real-world human annotations.\n",
-        "Contributed to a Generative AI project, focusing on shared-knowledge lifelong learning and continual learning using a multi-head transformer model.\n",
+        "Contributed to a Generative AI project, focusing on shared-knowledge lifelong learning and continual learning using a multi-head transformer model.\n"
       ]
     },
     {
-      schoolName: "Max Plank International School of Neural Information Processing",
+      schoolName:
+        "Max Plank International School of Neural Information Processing",
       logo: require("./assets/images/max_plank.jpeg"),
       subHeader: "M.S. of Neural Information Processing",
       duration: "August 2014 - August 2016",
@@ -232,7 +240,7 @@ const educationInfo = {
       logo: require("./assets/images/NTHU.png"),
       subHeader: "B.S. of Physics",
       duration: "August 2008 - August 2012",
-      desc: "",
+      desc: ""
     }
   ]
 };
@@ -270,9 +278,8 @@ const workExperiences = {
       date: "Feb 2017 – Aug 2017",
       desc: "Achieved Great Accuracy with FASTER-RCNN for Digit Recognition",
       descBullets: [
-
         "Utilized Faster R-CNN with TensorFlow for advanced object detection, demonstrating expertise in machine learning algorithms.\n",
-        
+
         "Led a critical project focused on digit recognition on marathon bibs, applying the model to a real-world photo dataset with high accuracy.\n",
 
         "Pioneered a data augmentation strategy using synthesized marathon bibs, creatively manipulating distortions, contamination, shading, and noise to enhance model training.\n",
@@ -280,8 +287,6 @@ const workExperiences = {
         "Achieved significant improvements in model performance after training with the synthesized data, showcasing ability to overcome challenging real-world data issues.\n",
 
         "Demonstrated strong problem-solving and technical skills in adapting machine learning models to practical, real-world applications.\n"
-
-
       ]
     },
     {
@@ -290,11 +295,10 @@ const workExperiences = {
       companylogo: require("./assets/images/Werner.png"),
       date: "Oct 2015 – Jan 2016",
       desc: "Simulated neural networks of various complexities using the Python-based NEST environment.",
-      descBullets:[
+      descBullets: [
         "Demonstrated reproducibility of results in NEST, originally developed in MATLAB.",
         "Exploited multi-threading and cluster-computing features of NEST for enhanced modeling speed."
       ]
-
     },
     {
       role: "Rotation Intern",
@@ -336,42 +340,120 @@ const openSource = {
 
 const bigProjects = {
   title: "Computer Science Courses Taken",
-  subtitle: "Grauduate Level Courses I took in Computer Science and Machine Learning",
+  subtitle:
+    "Grauduate Level Courses I took in Computer Science and Machine Learning",
   projects: [
     {
       image: require("./assets/images/USC.png"),
       projectName: "SCI 567 Machine Learning",
-      projectSubtitle: "Summer Semester 2018, University of Southern California",
-      projectDesc: "Mastery in machine learning fundamentals, statistical modeling, data preprocessing, algorithm optimization, predictive modeling, and use of ML tools and libraries.",
-          
+      projectSubtitle:
+        "Summer Semester 2018, University of Southern California",
+      projectDesc:
+        "Mastery in machine learning fundamentals, statistical modeling, data preprocessing, algorithm optimization, predictive modeling, and use of ML tools and libraries."
     },
     {
       image: require("./assets/images/USC.png"),
       projectName: "CSCI 677 Advanced Computer Vision",
       projectSubtitle: "Fall Semester 2018, University of Southern California",
-      projectDesc: "Developed expertise in advanced image processing, machine learning integration, computer vision algorithms, 3D vision, neural networks, and research skills in computer vision.",
-        
+      projectDesc:
+        "Developed expertise in advanced image processing, machine learning integration, computer vision algorithms, 3D vision, neural networks, and research skills in computer vision."
     },
     {
       image: require("./assets/images/USC.png"),
       projectName: "CSCI 570 Analysis of Algorithm",
-      projectSubtitle: "Spring Semester 2019, University of Southern California",
-      projectDesc: "Gained proficiency in algorithm design and analysis, complexity analysis, problem-solving, data structures, critical thinking, and mathematical skills."
-        
+      projectSubtitle:
+        "Spring Semester 2019, University of Southern California",
+      projectDesc:
+        "Gained proficiency in algorithm design and analysis, complexity analysis, problem-solving, data structures, critical thinking, and mathematical skills."
     },
     {
       image: require("./assets/images/USC.png"),
-      projectName: "CSCI 699 Mathematical Tools in Theoretical Machine Learning",
+      projectName:
+        "CSCI 699 Mathematical Tools in Theoretical Machine Learning",
       projectSubtitle: "Fall Semester 2019, University of Southern California",
-      projectDesc: "Acquired knowledge in theoretical ML foundations, advanced statistical methods, \
-       optimization algorithms, mathematical modeling, algorithmic complexity, and research methodology.",
-      
-    },
-
+      projectDesc:
+        "Acquired knowledge in theoretical ML foundations, advanced statistical methods, \
+       optimization algorithms, mathematical modeling, algorithmic complexity, and research methodology."
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
+<<<<<<< HEAD
+=======
+// Achievement Section
+// Include certificates, talks etc
+
+const achievementSection = {
+  title: emoji(" Publications 🏆 "),
+  subtitle: " Publications, Dissertation, Research Reports,Thesis",
+
+  achievementsCards: [
+    {
+      title:
+        "RANSAC-based semi-supervised learning algorithms for partially \
+      labeled data, with application to neurological screening from \
+      eye-tracking data",
+      subtitle: "Created 101 Image Datasets with Diverse Topics.",
+      image: require("./assets/images/dissertation_image.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Dissertation",
+          url: "https://drive.google.com/file/d/1oTa0MRq9ZyUZ988Gsowyy6vieWmaVoxV/view?usp=drive_link"
+        }
+      ]
+    },
+    {
+      title: "Lightweight Learner for Shared Knowledge Lifelong Learning",
+      subtitle: "Created 101 Image Datasets with Diverse Topics.",
+      image: require("./assets/images/LifeLongLearning.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d8wWX90AAAAJ&citation_for_view=d8wWX90AAAAJ:u-x6o8ySG0sC"
+        }
+      ]
+    },
+    {
+      title: "USC-DCT: A Collection of Diverse Classification Tasks",
+      subtitle: "Created 101 Image Datasets with Diverse Topics.",
+      image: require("./assets/images/USC-DCT.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://www.mdpi.com/2306-5729/8/10/153"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/iLab-USC/USC-DCT"
+        }
+      ]
+    },
+
+    {
+      title:
+        "Application of Domain Feature Disentanglement to Map Registration Problem",
+      subtitle: "CSCI-699 Advanced Deep Learning Final Project: ",
+      image: require("./assets/images/CSCI699.png"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        {
+          name: "Final Project",
+          url: "https://www.researchgate.net/profile/Pohsuan-Huang/publication/372311710_Application_of_Domain_Feature_Disentanglement_to_Map_Registration_Problem/links/64af519a8de7ed28ba93c6da/Application-of-Domain-Feature-Disentanglement-to-Map-Registration-Problem.pdf"
+        },
+        {
+          name: "Opensource GitHub",
+          url: "TBD"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+>>>>>>> 706e3f2171beb6b01e37a598d49e73207a251246
 
 // Blogs Section
 
@@ -396,8 +478,6 @@ const blogSection = {
   ],
   display: false // Set false to hide this section, defaults to true
 };
-
-
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
