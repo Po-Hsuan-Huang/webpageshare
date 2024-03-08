@@ -23,7 +23,7 @@ const greeting = {
   username: "Po-Hsuan Huang",
   title: "",
   subTitle: emoji(
-    "Welcome to my professional journey! I'm Po-Hsuan Huang, a Machine Learning Engineer with a deep-seated passion for advancing artificial intelligence and machine learning technologies. With a rich background in computer vision, deep learning, and AI research, my career is dedicated to bridging the gap between cutting-edge technology and practical applications."
+    "I'm Po-Hsuan Huang, a Machine Learning Engineer with a deep-seated passion for advancing artificial intelligence and learning human cognitive functions. With a rich background in computer vision, neuroscience, and physics, my career is dedicated to bridging the gap between AI and humanity. I love camping and back-packing."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1sljmMYY7NEuTxb17L1qsvMBKVMB1vbgc/view?usp=sharing", // Set to empty to hide the button
@@ -45,17 +45,22 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Professional Summary",
+  title:" My Contribution to Science",
   subTitle:
-    "Compuer Vision | Brain Computer Interface | Medical Machine Lenaring ",
+    "Proposed an Semi-supervised Learning Algorithm for Early Screening of Neurological Conditions ",
   skills: [
     emoji(
-      "⚡ Armed with a PhD in Computer Vision and Machine Learning. \
-      My expertise spans across Python, TensorFlow, PyTorch, and a variety of data science tools, \
-       honed through significant achievements in academia and industry alike. Beyond technical prowess, \
-       my collaborative spirit and proactive approach have guided me through complex technological landscapes, \
-       making me a valued partner in any tech-driven initiative. Whethein the tech space or seeking insights on \
-       leveraging AI for organizational growth, let's explore how we can drive the future of work together."
+      "RANSAC_SVM, inspired by the computer vision algorithm Random Sampling Consensus (RANSAC), \
+      is an iterative method for robust parameter estimation using a subset of inliers from the complete dataset.\
+       The RANSAC process begins with a randomly sampled dataset, followed by model evaluation using a validation set.\
+        If the model's score—considered as prediction accuracy—exceeds random chance, the predictions on the validation\
+         set and the high-confidence, unlabeled dataset are treated as true labels for the next iteration. Consequently,\
+          a well-performing model sees progressively improved scores, whereas a poor model is discarded for low performance.\
+           This process iteratively labels all data with strong consensus. The algorithm boosts the reliability of pseudo-labels\
+            and propagates labels to unlabeled data, proving invaluable in medical fields where early disease detection is costly.\
+             Potential applications include early screening for neurodegenerative diseases like mild cognitive impairment, \
+             Alzheimer's Disease, and others.\
+      "
     )
   ],
 
@@ -170,15 +175,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Deep Learning", //Insert stack or technology you have experience in
+      Stack: "Artificial Intelligence and Machine learning", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Eye-tracking Interface",
+      Stack: "Brain-Computer Interface",
       progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
+      Stack: "Secience and Research",
       progressPercentage: "90%"
     }
   ],
@@ -263,7 +268,7 @@ const bigProjects = {
     "Grauduate Level Courses I took in Computer Science and Machine Learning",
   projects: [
     {
-      image: require("./assets/images/USC.png"),
+      // image: require("./assets/images/USC.png"),
       projectName: "SCI 567 Machine Learning",
       projectSubtitle:
         "Summer Semester 2018, University of Southern California",
@@ -271,14 +276,14 @@ const bigProjects = {
         "Mastery in machine learning fundamentals, statistical modeling, data preprocessing, algorithm optimization, predictive modeling, and use of ML tools and libraries."
     },
     {
-      image: require("./assets/images/USC.png"),
+      // image: require("./assets/images/USC.png"),
       projectName: "CSCI 677 Advanced Computer Vision",
       projectSubtitle: "Fall Semester 2018, University of Southern California",
       projectDesc:
         "Developed expertise in advanced image processing, machine learning integration, computer vision algorithms, 3D vision, neural networks, and research skills in computer vision."
     },
     {
-      image: require("./assets/images/USC.png"),
+      // image: require("./assets/images/USC.png"),
       projectName: "CSCI 570 Analysis of Algorithm",
       projectSubtitle:
         "Spring Semester 2019, University of Southern California",
@@ -286,7 +291,7 @@ const bigProjects = {
         "Gained proficiency in algorithm design and analysis, complexity analysis, problem-solving, data structures, critical thinking, and mathematical skills."
     },
     {
-      image: require("./assets/images/USC.png"),
+      // image: require("./assets/images/USC.png"),
       projectName:
         "CSCI 699 Mathematical Tools in Theoretical Machine Learning",
       projectSubtitle: "Fall Semester 2019, University of Southern California",
@@ -402,7 +407,7 @@ const contactInfo = {
   email_address: "pohsuanh@usc.edu"
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
