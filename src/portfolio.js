@@ -42,87 +42,6 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji(" Publications 🏆 "),
-  subtitle:
-    " Publications, Dissertation, Research Reports,Thesis",
-
-  achievementsCards: [
-    {
-      title: "RANSAC-based semi-supervised learning algorithms for partially \
-      labeled data, with application to neurological screening from \
-      eye-tracking data",
-      subtitle:
-        "",
-      image: require("./assets/images/dissertation_image.png"
-      ),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Dissertation",
-          url:"https://drive.google.com/file/d/1oTa0MRq9ZyUZ988Gsowyy6vieWmaVoxV/view?usp=drive_link"
-        },
-      ]
-    },
-    {
-      title: "Lightweight Learner for Shared Knowledge Lifelong Learning",
-      subtitle:
-        "",
-      image: require("./assets/images/LifeLongLearning.png"
-      ),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Publication",
-          url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d8wWX90AAAAJ&citation_for_view=d8wWX90AAAAJ:u-x6o8ySG0sC"
-        },
-      ]
-    },
-    {
-      title: "USC-DCT: A Collection of Diverse Classification Tasks",
-      subtitle:
-        "Created 101 Image Datasets with Diverse Topics.",
-      image: require("./assets/images/USC-DCT.png"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "Publication",
-          url: "https://www.mdpi.com/2306-5729/8/10/153"
-        },
-        {
-          name: "Github",
-          url: "https://github.com/iLab-USC/USC-DCT"
-        }
-      ]
-    },
-
-    {
-      title: "Application of Domain Feature Disentanglement to Map Registration Problem",
-      subtitle: "CSCI-699 Advanced Deep Learning Final Project: ",
-      image: require("./assets/images/CSCI699.png"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {
-          name: "Final Project",
-          url: "https://www.researchgate.net/profile/Pohsuan-Huang/publication/372311710_Application_of_Domain_Feature_Disentanglement_to_Map_Registration_Problem/links/64af519a8de7ed28ba93c6da/Application-of-Domain-Feature-Disentanglement-to-Map-Registration-Problem.pdf"
-        },
-        {
-          name: "Opensource GitHub",
-          url: "TBD"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-
-
-
 // Skills Section
 
 const skillsSection = {
@@ -379,8 +298,6 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
-<<<<<<< HEAD
-=======
 // Achievement Section
 // Include certificates, talks etc
 
@@ -453,7 +370,6 @@ const achievementSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
->>>>>>> 706e3f2171beb6b01e37a598d49e73207a251246
 
 // Blogs Section
 
@@ -486,7 +402,7 @@ const contactInfo = {
   email_address: "pohsuanh@usc.edu"
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
