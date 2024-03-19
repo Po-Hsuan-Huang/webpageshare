@@ -1,0 +1,64 @@
+@import "../../_globalColor";
+
+.highlight-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.highlight-text-div {
+  margin-left: 50px;
+}
+
+.highlight-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.highlight-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+.subTitle {
+  color: $subTitle;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .highlight-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .highlight-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .highlight-main-div {
+    flex-direction: column;
+  }
+  .highlight-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .highlight-text {
+    font-size: 16px;
+  }
+  .highlight-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .highlight-image-div {
+    /* display: none; */
+    order: 2;
+  }
+}

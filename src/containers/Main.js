@@ -17,6 +17,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import Highlight from "./highlight/Highlight";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -55,6 +56,7 @@ const Main = () => {
             <Projects />
             <StartupProject />
             <Skills />
+            <Highlight/>
             <StackProgress />
             <Blogs />
             <Profile />

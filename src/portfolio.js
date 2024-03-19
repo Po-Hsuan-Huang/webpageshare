@@ -131,13 +131,35 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
+
+// Project Highlight
+
+const projectHighlight = {
+  title:"GitHub Project Highlight",
+  subTitle:
+    "High Throughput, Realistic Data-Augmentation Toolkit for Opitical Digit Detection on Fabrics in Outdoors Enviroment",
+  highlight: [
+    emoji(
+      "The toolkit allows you to generate image data and annotations(bounding boxes) necessary for number detection for tags of \
+      various textures, colors, and geometry. For example, you can generate car plates, marathon tag cloths in simulated \
+      environments.The data then can be cropped to comply with the data format of PASCAL Object Dectection Competition\
+       (http://host.robots.ox.ac.uk/pascal/VOC/). You can use this toolkit to generate millions of photos for model fine-tuning.\
+      "
+    )
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+  
+
+
 // Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "University of Southern California",
+      schoolName: "University of Southern California, USA",
       logo: require("./assets/images/USC.png"),
       subHeader:
         "Ph.D of Computational Neuroscence and artificial intelligence",
@@ -145,13 +167,14 @@ const educationInfo = {
       desc: "RANSAC inspired semisupervised learning with application to early-stage detection of rare neurological conditions",
       descBullets: [
         "Innovated a robust semi-supervised algorithm, notable for its resilience to incorrect annotations and outliers, and capable of delivering optimal results in real-world data \n",
-        "Designed and Implemented a machine learning pipeline with visual-based features and computer vision pipeline. Achieved optimal results with limited low-quality real-world human annotations.\n",
+        " Our approach provided 20% better classification accuracy than 4 baseline algorithms in detection of Parkinson’s Diseas",
+        "Designed and Implemented a low cost, high through-put machine learning pipeline with visual-based features and computer vision pipeline. Achieved optimal results with limited low-quality real-world human annotations.\n",
         "Contributed to a Generative AI project, focusing on shared-knowledge lifelong learning and continual learning using a multi-head transformer model.\n"
       ]
     },
     {
       schoolName:
-        "Max Plank International School of Neural Information Processing",
+        "Max Plank International School of Neural Information Processing, Germany",
       logo: require("./assets/images/max_plank.jpeg"),
       subHeader: "M.S. of Neural Information Processing",
       duration: "August 2014 - August 2016",
@@ -160,7 +183,7 @@ const educationInfo = {
     },
 
     {
-      schoolName: "National Tsing Hua University",
+      schoolName: "National Tsing Hua University, Taiwan",
       logo: require("./assets/images/NTHU.png"),
       subHeader: "B.S. of Physics",
       duration: "August 2008 - August 2012",
@@ -241,7 +264,7 @@ const workExperiences = {
       company: "Academia Sinica",
       companylogo: require("./assets/images/academia_sinica.png"),
       date: "Oct 2013 – Oct 2014",
-      desc: "Raman-Sepectrascopics | Nanotehcnology | Laboratory Equipment Design",
+      desc: "Raman-Sepectrascopics | Nanotechnology | Laboratory Equipment Design",
       descBullets: [
         "Assisted in founding a nanotechnology lab from the ground up. Coordinated with vendors and suppliers for the procurement of lab equipment and materials",
         "Contributed to the development of research protocols and experimental designs",
@@ -415,6 +438,7 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
+  projectHighlight,
   educationInfo,
   techStack,
   workExperiences,
