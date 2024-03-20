@@ -5,28 +5,29 @@ import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Footer() {
-
   useEffect(() => {
+    const GazeCloudAPI = window.GazeCloudAPI;
+    debugger;
     // Start eye tracking
     GazeCloudAPI.StartEyeTracking();
 
     // Define your results data callback
     GazeCloudAPI.OnResult = function (GazeData) {
-      console.log('GazeData:', GazeData);
+      console.log("GazeData:", GazeData);
       // Process GazeData here
     };
 
     // Optional callbacks
     GazeCloudAPI.OnCalibrationComplete = function () {
-      console.log('Gaze calibration complete');
+      console.log("Gaze calibration complete");
     };
 
     GazeCloudAPI.OnCamDenied = function () {
-      console.log('Camera access denied');
+      console.log("Camera access denied");
     };
 
     GazeCloudAPI.OnError = function (msg) {
-      console.log('Error:', msg);
+      console.log("Error:", msg);
     };
 
     // Enable click recalibration
@@ -54,6 +55,4 @@ export default function Footer() {
       </div>
     </Fade>
   );
-
-
 }
